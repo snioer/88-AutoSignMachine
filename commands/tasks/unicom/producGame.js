@@ -222,7 +222,7 @@ var producGame = {
         const useragent = buildUnicomUserAgent(options, 'p')
         let params = {
             'methodType': 'popularGames',
-            'deviceType': 'Android',
+            'deviceType': 'iphone_c',
             'clientVersion': appInfo.version,
         }
         let { data, config } = await axios.request({
@@ -284,7 +284,7 @@ var producGame = {
         const useragent = buildUnicomUserAgent(options, 'p')
         let params = {
             'methodType': 'record',
-            'deviceType': 'Android',
+            'deviceType': 'iphone_c',
             'clientVersion': appInfo.version,
             'gameId': gameId,
             'taskId': ''
@@ -313,7 +313,7 @@ var producGame = {
             'videoIntegral': '0',
             'isVideo': 'Y',
             'clientVersion': appInfo.version,
-            'deviceType': 'Android'
+            'deviceType': 'iphone_c'
         }
         let { data, config } = await axios.request({
             headers: {
@@ -335,7 +335,7 @@ var producGame = {
         const useragent = buildUnicomUserAgent(options, 'p')
         let params = {
             'methodType': 'queryTaskCenter',
-            'deviceType': 'Android',
+            'deviceType': 'iphone_c',
             'clientVersion': appInfo.version
         }
         let { data, config } = await axios.request({
@@ -463,7 +463,7 @@ var producGame = {
         const useragent = buildUnicomUserAgent(options, 'p')
         let params = {
             'methodType': 'timeTaskQuery',
-            'deviceType': 'Android',
+            'deviceType': 'iphone_c',
             'clientVersion': appInfo.version
         }
         let { data } = await axios.request({
@@ -491,7 +491,7 @@ var producGame = {
             'userNumber': options.user,
             'methodType': 'flowGet',
             'gameId': gameId,
-            'deviceType': 'Android',
+            'deviceType': 'iphone_c',
             'clientVersion': appInfo.version
         }
         let { data } = await axios.request({
@@ -522,7 +522,7 @@ var producGame = {
         let params = {
             'methodType': 'taskGetReward',
             'taskCenterId': taskCenterId,
-            'deviceType': 'Android',
+            'deviceType': 'iphone_c',
             'clientVersion': appInfo.version,
         }
         let { data } = await axios.request({
@@ -585,8 +585,8 @@ var producGame = {
             'arguments8': '',
             'arguments9': '',
             'netWay': 'Wifi',
-            'remark1': '安柠牛逼',
-            'remark': '安柠牛逼',
+            'remark1': '游戏频道看视频得积分',
+            'remark': '游戏视频任务积分',
             'version': appInfo.unicom_version,
             'codeId': 945535736
         }
